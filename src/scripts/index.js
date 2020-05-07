@@ -1,5 +1,5 @@
 //this is the url declared.
-let url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=6fca41f1ee4846f9bac8555d7b53dcae&pageSize=30";
+let url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=6fca41f1ee4846f9bac8555d7b53dcae";
 
 
 let prepareHTMLFromData = function(dataArr){
@@ -16,6 +16,7 @@ let prepareHTMLFromData = function(dataArr){
             <h2 class="article-title">${dataArr[i]["title"]}</h2>
             <p class="article-description">${dataArr[i]["description"]}</p>
             <span class="article-author">${dataArr[i]["author"]}</span>
+            
         </li> 
         `;
         // console.log(htmlString);
