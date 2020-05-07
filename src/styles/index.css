@@ -1,5 +1,3 @@
-@import "./reset.css";
-
 * {
   font-family: 'Times New Roman', Times, serif;
 }
@@ -50,7 +48,7 @@ body {
         align-content: center;
     padding: 9px;
     margin-bottom: 10px;
-    text-overflow: clip;
+    text-overflow: ellipsis;
   }
   .article-img {
     float: center;
