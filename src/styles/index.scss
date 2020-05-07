@@ -47,7 +47,7 @@ body{
         align-content: center;
         padding:9px;
         margin-bottom: 10px;
-        text-overflow: clip;
+        text-overflow: ellipsis;
     }
 
     .article-img{
@@ -71,6 +71,7 @@ body{
         color:#41bbf2;
         font-size: 12px;
         font-weight: 300;
+        
     }
 }
 
