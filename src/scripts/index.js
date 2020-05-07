@@ -1,12 +1,14 @@
 //this is the url declared.
-let url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=6fca41f1ee4846f9bac8555d7b53dcae";
+let url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=6fca41f1ee4846f9bac8555d7b53dcae";
 
 
 let prepareHTMLFromData = function(dataArr){
     let finalHtml = '';
     if(dataArr.length == 0 ){
-        let str = "No article was found based on the search.";
-        document.getElementsByClassName("not-found").innerHTML = str;
+        let text = "No article was found based on the search.";
+        let str = `<div class="not-found">${text}</div>`;
+        finalHtml = finalHtml + str;
+        document.getElementsByClassName("not-found").innerHTML = finalHtml;
     }
     for (let i=0;i<dataArr.length;i++){
         console.log(dataArr[i]);
