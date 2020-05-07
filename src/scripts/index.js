@@ -6,7 +6,7 @@ let prepareHTMLFromData = function(dataArr){
     let finalHtml = '';
     if(dataArr.length == 0 ){
         let str = "No article was found based on the search.";
-        document.getElementById("not-found").innerHTML = str;
+        document.getElementsByClassName("not-found").innerHTML = str;
     }
     for (let i=0;i<dataArr.length;i++){
         console.log(dataArr[i]);
